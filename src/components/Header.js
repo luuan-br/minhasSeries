@@ -20,19 +20,26 @@ const Header = () => {
 
 	return (
 		<Navbar color="light" light expand="md">
-			<NavbarBrand tag={Link} to={"/"}>
-				Minhas series
-			</NavbarBrand>
-			<NavbarToggler onClick={toggle} />
-			<Collapse isOpen={open} navbar>
-				<Nav className="ml-auto" navbar>
-					<NavItem>
-						<NavLink tag={Link} to="/generos">
-							Generos
-						</NavLink>
-					</NavItem>
-				</Nav>
-			</Collapse>
+			<div className="container">
+				<NavbarBrand tag={Link} to={"/"}>
+					Minhas series
+				</NavbarBrand>
+				<NavbarToggler onClick={toggle} />
+				<Collapse isOpen={open} navbar>
+					<Nav className="ml-auto" navbar>
+						<NavItem>
+							<NavLink tag={Link} to="/series">
+								Series
+							</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink tag={Link} to="/generos">
+								Generos
+							</NavLink>
+						</NavItem>
+					</Nav>
+				</Collapse>
+			</div>
 		</Navbar>
 	);
 };
