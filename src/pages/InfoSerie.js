@@ -55,7 +55,7 @@ const InfoSerie = ({ match }) => {
 	};
 
 	if (sucess) {
-		// return <Redirect to="/series"></Redirect>;
+		return <Redirect to="/series"></Redirect>;
 	}
 
 	return (
